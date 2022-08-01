@@ -10,7 +10,7 @@ function checkBoxes() {
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top
 
-        if(box < triggerBotton) {
+        if(boxTop < triggerBotton) {
             box.classList.add('show')
         } else {
             box.classList.remove('show')
